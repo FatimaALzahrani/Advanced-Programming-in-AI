@@ -129,8 +129,21 @@ document.addEventListener("DOMContentLoaded", () => {
     glossaryItem.innerHTML = `
         <div class="term">${item.icon} ${item.term}</div>
         <div class="definition">${item.definition}</div>
-        <div class="code-example">${item.code}</div>
+        <div class="code-example"><code><pre>${item.code}</code></pre></div>
       `;
     glossaryContainer.appendChild(glossaryItem);
   });
+});
+
+const searchBox = document.getElementById("search-box");
+searchBox.addEventListener("input", () => {
+  const searchTerm = searchBox.value.toLowerCase();
+  document.querySelectorAll(".glossary-term").forEach((term) => {
+    const termText = term.querySelector(".term").textContent.toLowerCase();
+    term.style.display = termText.includes(searchTerm) ? "block" : "none";
+  });
+});
+
+glossaryItem.addEventListener("click", () => {
+  glossaryItem.classList.toggle("expanded");
 });

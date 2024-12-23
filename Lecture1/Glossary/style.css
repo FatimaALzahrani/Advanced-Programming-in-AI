@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(45deg, #7a2e6e, #09b9ee);
+    background: linear-gradient(135deg, #7a2e6e 0%, #09b9ee 100%);
     margin: 0;
     padding: 0;
     color: #fff;
@@ -71,8 +71,19 @@ body {
     white-space: pre-wrap;
   }
 
-  a{
+  a {
     color: pink;
+  }
+
+  #search-box {
+    width: 90%;
+    background: #f4eeee;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s, background 0.5s;
   }
   
   @keyframes bounceIn {
