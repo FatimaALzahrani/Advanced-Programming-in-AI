@@ -13,11 +13,11 @@ The **modulus operator** works on integers and returns the remainder when the fi
 
 2. **Applications**:
    - **Divisibility Check**:
-     - If `x % y == 0`, then `x` is divisible by `y` without a remainder. [Example](/Divisibility Check.py)
+     - If `x % y == 0`, then `x` is divisible by `y` without a remainder. [Example](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture1/Modulus%20Operator/Divisibility%20Check.py)
    - **Digit Extraction**:
      - `x % 10` extracts the right-most digit of `x` in base 10.
      - `x % 100` extracts the last two digits of `x`.
-     - [Example](/Digit Extraction.py)
+     - [Example](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture1/Modulus%20Operator/Digit%20Extraction.py)
 
 ### Example Code:
 
