@@ -1,13 +1,13 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&customColorList=9&text=Catching%20Exceptions&fontSize=61&animation=twinkling)
 
-    ```python
+  ```python
     try:
         x = int(input("Enter a number: "))
         print(10/x)
 
     except:
         print("Invalid input")
-    ```
+  ```
 
 ### • There are two blocks defined with '`try`' and '`except`' keywords. Under what circumstances does each block execute?
 
