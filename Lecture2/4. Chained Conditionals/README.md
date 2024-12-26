@@ -1,13 +1,13 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&customColorList=25&text=Chained%20Conditionals&fontSize=61&animation=twinkling)
 
     ```python
-    choice = input("Enter choice: ")
-    if choice == 'a':
-        print('Bad guess')
-    elif choice == 'b':
-        print('Good guess')
-    elif choice == 'c':
-        print('Close, but not Correct')
+        choice = input("Enter choice: ")
+        if choice == 'a':
+            print('Bad guess')
+        elif choice == 'b':
+            print('Good guess')
+        elif choice == 'c':
+            print('Close, but not Correct')
     ```
 
 ### • What do you notice about `else` in the code above?
