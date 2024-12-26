@@ -59,4 +59,4 @@ The function `xor_encrypt_decrypt(data, key)` performs both encryption and decry
 
 ### Source Reference:
 
-For more details on how XOR works in Python, check out this [tutorial on Python XOR encryption](https://tutorpython.com/python-xor/).
+For more details on how XOR works in Python, check out this [tutorial on Learn to use Python XOR with 5 Easy Example](https://tutorpython.com/python-xor/).
