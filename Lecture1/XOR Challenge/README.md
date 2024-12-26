@@ -1,4 +1,4 @@
-# XOR Encryption and Decryption
+![header](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&customColorList=9&text=XOR%20Challenge&fontSize=61&animation=twinkling)
 
 ## Introduction
 
