@@ -9,15 +9,13 @@ This folder contains a series of Python exercises that involve loops, functions,
 1. [Odd Numbers Loop (for and while)](#odd-numbers-loop-for-and-while)
 2. [Factorial Calculation using Loop](#factorial-calculation-using-loop)
 3. [Factorial Calculation using Loop with error handleing](#factorial-calculation-using-loop-error)
-4. [Exercise Solutions](#exercise-solutions)
+4. [Exercise Solutions]
    - [Exercise 4](#exercise-4-what-is-the-purpose-of-the-def-keyword-in-python)
    - [Exercise 5](#exercise-5-what-will-the-program-print-out)
    - [Exercise 6](#exercise-6-time-and-a-half-pay-computation)
    - [Exercise 7](#exercise-7-grade-computation)
-5. [How to Run](#how-to-run)
-6. [License](#license)
 
-## Odd Numbers Loop (for and while)
+## Odd Numbers Loop (for and while) <a name="odd-numbers-loop-for-and-while"></a>
 
 This exercise demonstrates how to print all `odd numbers` between 1 and 10 using both `for` and `while` loops.
 
@@ -42,7 +40,7 @@ while num <= 10:
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Screenshots/image.png)
 
-## Factorial Calculation using Loop
+## Factorial Calculation using Loop <a name="factorial-calculation-using-loop"></a>
 
 This program calculates the `factorial` of a number using both `for` and `while` loops.
 
@@ -69,7 +67,7 @@ This program calculates the `factorial` of a number using both `for` and `while`
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Screenshots/image-1.png)
 
-## Factorial Calculation using Loop with error handling
+## Factorial Calculation using Loop with error handling <a name="factorial-calculation-using-loop-error"></a>
 
 This program calculates the `factorial` of a number using both `for` and `while` loops. It also includes `exception handling` for invalid inputs.
 
@@ -106,7 +104,7 @@ calculate_factorial()
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Screenshots/image-2.png)
 
-## **What is the purpose of the `def` keyword in Python?**
+## **What is the purpose of the `def` keyword in Python?** <a name="exercise-4-what-is-the-purpose-of-the-def-keyword-in-python"></a>
 
 ### **Exercise 4:**
 
@@ -148,7 +146,7 @@ greet("Fatimah")  # Output: Hello, Fatimah! Welcome to Python.
 greet("Mohammed") # Output: Hello, Mohammed! Welcome to Python.
 ```
 
-## What will the program print out?
+## What will the program print out? <a name="exercise-5-what-will-the-program-print-out"></a>
 
 ```python
 def fred():
@@ -167,7 +165,7 @@ jane()
 
 The program calls jane() which prints "ABC", then fred() which prints "Zap", and then jane() again prints "ABC".
 
-## Time-and-a-Half Pay Computation
+## Time-and-a-Half Pay Computation <a name="exercise-6-time-and-a-half-pay-computation"></a>
 
 Rewrite your pay computation with time-and-a-half for overtime and
 create a `function` called `computepay` which takes two `parameters (hours and rate)`
@@ -201,7 +199,7 @@ print(computepay(hours, rate))
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Screenshots/image-4.png)
 
-## Grade Computation
+## Grade Computation <a name="exercise-7-grade-computation"></a>
 
 Rewrite the grade program from the previous chapter using a function
 called computegrade that takes a score as its parameter and returns a grade as a
