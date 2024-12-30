@@ -2,6 +2,8 @@
 
 This folder contains a series of Python exercises that involve loops, functions, and exception handling. The exercises cover various concepts such as calculating factorials, printing odd numbers, and handling user inputs gracefully.
 
+To reach the practical application during the lecture [Click here](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/practical.ipynb)
+
 ## Table of Contents
 
 1. [Odd Numbers Loop (for and while)](#odd-numbers-loop-for-and-while)
