@@ -1,5 +1,3 @@
-# Python Exercises - Loops, Functions, and Exception Handling
-
 ![header](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&customColorList=23&text=Exercises%20of%20Chapter%204&fontSize=61&animation=twinkling)
 
 This folder contains a series of Python exercises that involve loops, functions, and exception handling. The exercises cover various concepts such as calculating factorials, printing odd numbers, and handling user inputs gracefully.
