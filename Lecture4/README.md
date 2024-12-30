@@ -9,7 +9,7 @@ This folder contains a series of Python exercises that involve loops, functions,
 1. [Odd Numbers Loop (for and while)](#odd-numbers-loop-for-and-while)
 2. [Factorial Calculation using Loop](#factorial-calculation-using-loop)
 3. [Factorial Calculation using Loop with error handleing](#factorial-calculation-using-loop-error)
-4. [Exercise Solutions]
+4. Book Exercise Solutions
    - [Exercise 4](#exercise-4-what-is-the-purpose-of-the-def-keyword-in-python)
    - [Exercise 5](#exercise-5-what-will-the-program-print-out)
    - [Exercise 6](#exercise-6-time-and-a-half-pay-computation)
