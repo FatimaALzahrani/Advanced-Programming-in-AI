@@ -1,20 +1,36 @@
-# Assume that we execute the following assignment statements:
-#  width = 17
-#  height = 12.0
-'''
- For each of the following expressions, write the value of the expression and the
- type (of the value of the expression).
- 1. width//2
- 2. width/2.0
- 3. height/3
- 4. 1 + 2 * 5
-'''
-width = int(input("Enter width: "))
-height = float(input("Enter height: "))
-# width = 17
-# height = 12.0
+from colorama import Fore , init, Style
 
-print(f"1. width//2 = {width//2}, Type: {type(width//2)}")
-print(f"2. width/2.0 = {width/2.0}, Type: {type(width/2.0)}")
-print(f"3. height/3 = {height/3}, Type: {type(height/3)}")
-print(f"4. 1 + 2 * 5 = {1 + 2 * 5}, Type: {type(1 + 2 * 5)}")
+init(autoreset=True)
+
+def compute_grade(score):
+    """
+        Computes the grade based on the score.
+        
+        Parameters:
+        score (float): A score between 0.0 and 1.0.
+        
+        Returns:
+        str: The grade (A, B, C, D, F) or an error message for invalid scores.
+    """
+    if score >= 0.9:
+        return "A"
+    elif score >= 0.8:
+        return "B"
+    elif score >= 0.7:
+        return "C"
+    elif score >= 0.6:
+        return "D"
+    else:
+        return "F"
+
+# use the function
+if __name__ == '__main__':
+    try:
+        score = float(input(Fore.YELLOW+"Enter Score : "))
+        if 0 <= score <= 1:
+            grade = compute_grade(score)
+            print(Fore.GREEN + f"Grade: {grade}")
+        else:
+            print(Fore.RED + "Bad Score")
+    except:
+        print(Fore.RED + "Bad Score")

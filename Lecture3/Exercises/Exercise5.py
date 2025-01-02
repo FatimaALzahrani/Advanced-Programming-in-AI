@@ -1,22 +1,18 @@
-from colorama import Fore, Style, init
+# Do the exercises on pages 64 and 65 of the book (Charles R. Severance .et al, Python for Everybody: Exploring Data in Python 3, CreateSpace Independent Publishing Platform, 2024).
 
-def compute_pay_with_error_handling():
-    """
-    Prompts the user for hours and rate, computes pay, and handles invalid inputs.
-    """
-    try:
-        hours = float(input(Fore.MAGENTA+"Enter Hours: "))
-        rate = float(input(Fore.MAGENTA+"Enter Rate: "))
-        if hours > 40:
-            overtime_hours = hours - 40
-            pay = (40 * rate) + (overtime_hours * rate * 1.5)
-        else:
-            pay = hours * rate
-        print(Fore.GREEN+f"Pay: {pay:.2f}")
-    except ValueError:
-        print(Fore.RED+"Error, please enter numeric input.")
+#  Exercise 5: What will the following Python program print out?
+def fred():
+    print("Zap")
 
+def jane():
+    print("ABC")
 
-# use the function
-if __name__ == "__main__":
-    compute_pay_with_error_handling()
+jane()
+fred()
+jane()
+
+"""
+Answer:
+d) ABC Zap ABC
+The program calls jane() which prints "ABC", then fred() which prints "Zap", and then jane() again prints "ABC".
+"""

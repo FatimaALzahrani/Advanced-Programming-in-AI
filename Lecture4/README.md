@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&customColorList=23&text=Exercises%20of%20Chapter%204&fontSize=61&animation=twinkling)
 
-This folder contains a series of Python exercises that involve loops, functions, and exception handling. The exercises cover various concepts such as calculating factorials, printing odd numbers, and handling user inputs gracefully.
+Here solutions to the Exercises from Chapter 4 - Iteration
 
 To reach the practical application during the lecture [Click here](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/practical.ipynb)
 
@@ -9,11 +9,9 @@ To reach the practical application during the lecture [Click here](https://githu
 1. [Odd Numbers Loop (for and while)](#odd-numbers-loop-for-and-while)
 2. [Factorial Calculation using Loop](#factorial-calculation-using-loop)
 3. [Factorial Calculation using Loop with error handleing](#factorial-calculation-using-loop-error)
-4. Book Exercise Solutions
-   - [Exercise 4](#exercise-4-what-is-the-purpose-of-the-def-keyword-in-python)
-   - [Exercise 5](#exercise-5-what-will-the-program-print-out)
-   - [Exercise 6](#exercise-6-time-and-a-half-pay-computation)
-   - [Exercise 7](#exercise-7-grade-computation)
+4. Do the exercises on pages 76 and 77 of the book
+   - [ Exercise 1: Write a program which repeatedly reads integers until the user enters “done”. Once “done” is entered, print out the total, count, and average of the integers. If the user enters anything other than a integers, detect their mistake using try and except and print an error message and skip to the next integers.](#repeatedly)
+   - [Exercise 2: Write another program that prompts for a list of numbers as above and at the end prints out both the maximum and minimum of the numbers instead of the average.](#list_num)
 
 ## Odd Numbers Loop (for and while) <a name="odd-numbers-loop-for-and-while"></a>
 
@@ -104,137 +102,66 @@ calculate_factorial()
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Screenshots/image-2.png)
 
-## **What is the purpose of the `def` keyword in Python?** <a name="exercise-4-what-is-the-purpose-of-the-def-keyword-in-python"></a>
+## Write a program which repeatedly reads integers until the user enters “done”. <a name="repeatedly"></a>
 
-### **Exercise 4:**
-
-What is the purpose of the “def” keyword in Python?
-
-**Options:**  
-a) It is slang that means “the following code is really cool”  
-b) It indicates the start of a function  
-c) It indicates that the following indented section of code is to be stored for later  
-d) b and c are both true  
-e) None of the above
-
-### **Answer:**
-
-**`d) b and c are both true`**
-
-### **Explanation:**
-
-The `def` keyword in Python is used to define a **function**. Functions are reusable blocks of code designed to perform specific tasks.
-
-- **Option b:** Correct, because `def` marks the start of a function.
-- **Option c:** Correct, because the indented block of code after `def` is stored for later execution when the function is called.
-- **Option d:** Correct, as both b and c are true.
-- **Option a:** Incorrect, this is a humorous option.
-- **Option e:** Incorrect, because both b and c are valid.
-
-### **Example:**
-
-```python
-# Define a function using the 'def' keyword
-def greet(name):
-    """
-    This function greets the person whose name is passed as an argument.
-    """
-    print(f"Hello, {name}! Welcome to Python.")
-
-# Call the function
-greet("Fatimah")  # Output: Hello, Fatimah! Welcome to Python.
-greet("Mohammed") # Output: Hello, Mohammed! Welcome to Python.
-```
-
-## What will the program print out? <a name="exercise-5-what-will-the-program-print-out"></a>
-
-```python
-def fred():
-    print("Zap")
-
-def jane():
-    print("ABC")
-
-jane()
-fred()
-jane()
-```
-
-**Answer**:
-`d) ABC Zap ABC`
-
-The program calls jane() which prints "ABC", then fred() which prints "Zap", and then jane() again prints "ABC".
-
-## Time-and-a-Half Pay Computation <a name="exercise-6-time-and-a-half-pay-computation"></a>
-
-Rewrite your pay computation with time-and-a-half for overtime and
-create a `function` called `computepay` which takes two `parameters (hours and rate)`
+Write a program which repeatedly reads integers until the user enters “done”. Once “done” is entered, print out the total, count, and average of the integers. If the user enters anything other than a integers, detect their mistake using try and except and print an error message and skip to the next integers.
 
 **Code Snippet**:
 
 ```python
-def computepay(hours, rate):
+count = 0
+total = 0
+print("Enter integers one by one (type 'done' to finish.)")
+while True:
+    num = input()
+    if num.lower()=="done":
+        average = total/count
+        print(f"Total: {total}, Count: {count}, Average: {average}")
+        break
     try:
-        hours = float(hours)
-        rate = float(rate)
-        if hours > 40:
-            overtime_hours = hours - 40
-            overtime_pay = overtime_hours * (rate * 1.5)
-            total_pay = (40 * rate) + overtime_pay
-        else:
-            total_pay = hours * rate
-
-        return f"Total Pay: {total_pay}"
+        total+=int(num)
+        count+=1
     except:
-        return f"Invalid input. Please enter numeric values."
-
-# Input
-hours = input(f"Enter Hours: ")
-rate = input(f"Enter Rate: ")
-print(computepay(hours, rate))
+        print("Something went wrong, please enter an integer!")
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Exercise6.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Exercise4.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Screenshots/image-4.png)
 
-## Grade Computation <a name="exercise-7-grade-computation"></a>
+## prompts for a list of numbers as above and at the end prints out both the maximum and minimum of the numbers <a name="list_num"></a>
 
-Rewrite the grade program from the previous chapter using a function
-called computegrade that takes a score as its parameter and returns a grade as a
-string.
+Write another program that prompts for a list of numbers as above and at the end prints out both the maximum and minimum of the numbers instead of the average.
 
 **Code Snippet**:
 
 ```python
-def computegrade(score):
-    try:
-        score = float(score)
-        if score > 1.0 or score < 0.0:
-            return f"Bad score"
-        elif score >= 0.9:
-            return f"A"
-        elif score >= 0.8:
-            return f"B"
-        elif score >= 0.7:
-            return f"C"
-        elif score >= 0.6:
-            return f"D"
-        else:
-            return f"F"
-    except:
-        return f"Bad score"
+max_num = None
+min_num = None
 
-# Input and Testing
 while True:
-    user_input = input(f"Enter score (or type 'exit' to quit): ")
-    if user_input.lower() == "exit":
+    num = input("Enter number: ")
+
+    if num.lower() == "done":
+        if max_num is not None and min_num is not None:
+            print(f"Maximum: {max_num} And Minimum: {min_num}")
+        else:
+            print(f"No valid numbers were entered.")
         break
-    print(computegrade(user_input))
+
+    try:
+        num = int(num)
+        if max_num is None or num > max_num:
+            max_num = num
+        if min_num is None or num < min_num:
+            min_num = num
+
+    except:
+        print("Invalid data. Please enter a valid number.")
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Exercise7.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Exercise5.py)
 
 **Screenshot from the output**:
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Screenshots/image-3.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture4/Screenshots/image-5.png)

@@ -19,7 +19,7 @@ def computegrade(score):
             return f"{Fore.YELLOW}D"
         else:
             return f"{Fore.RED}F"
-    except ValueError:
+    except:
         return f"{Fore.RED}Bad score"
 
 # Input and Testing

@@ -1,27 +1,20 @@
-# Do the exercises on pages 64 and 65 of the book (Charles R. Severance .et al, Python for Everybody: Exploring Data in Python 3, CreateSpace Independent Publishing Platform, 2024).
+# Do the exercises on pages 76 and 77 of the book (Charles R. Severance .et al, Python for Everybody: Exploring Data in Python 3, CreateSpace Independent Publishing Platform, 2024).
 
-#  Exercise 4: What is the purpose of the “def” keyword in Python?
-#  a) It is slang that means “the following code is really cool”
-#  b) It indicates the start of a function
-#  c) It indicates that the following indented section of code is to be stored for later
-#  d) b and c are both true
-#  e) None of the above
+# Exercise 1: Write a program which repeatedly reads integers until the user enters “done”. Once “done” is entered, print out the total, count, and average of the integers.
+#  If the user enters anything other than a integers, detect their mistake using try and except and print an error message and skip to the next integers.
+from colorama import Fore, Style
 
-# Define a function using the 'def' keyword
-def greet(name):
-    """
-    This function takes a name as an argument and prints a greeting message.
-    """
-    print(f"Hello, {name}! Welcome to Python.")
-
-# Call the function
-greet("Mohammed")  # Output: Hello, Mohammed! Welcome to Python.
-greet("Fatimah") # Output: Hello, Fatimah! Welcome to Python.
-
-"""
-The def keyword begins the function definition.
-greet is the function name.
-(name) is the parameter the function accepts.
-The indented code block is the body of the function, which executes when the function is called.
-greet("Mohammed") and greet("Fatimah") are function calls that execute the function with different arguments.
-"""
+count = 0
+total = 0
+print(f"{Fore.BLUE}Enter integers one by one (type 'done' to finish.){Fore.YELLOW}")
+while True:
+    num = input()
+    if num.lower()=="done":
+        average = total/count
+        print(f"{Fore.MAGENTA}Total: {Fore.GREEN}{total}{Fore.MAGENTA}, Count: {Fore.GREEN}{count}{Fore.MAGENTA}, Average: {Fore.GREEN}{average}")
+        break
+    try:
+        total+=int(num)
+        count+=1
+    except:
+        print(f"{Fore.RED}Something went wrong, please enter an integer!{Fore.YELLOW}")

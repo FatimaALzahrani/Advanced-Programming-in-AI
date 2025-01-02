@@ -1,5 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&customColorList=13&text=Exercises&fontSize=70&animation=twinkling)
 
+Here solutions to the Exercises from Chapter 5 - Strings
+
 To reach the practical application during the lecture [Click here](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/practical.ipynb)
 
 ## Chapter Exercises
@@ -9,8 +11,8 @@ To reach the practical application during the lecture [Click here](https://githu
 3. [Extract the domain name from an email address.](#extract_domian)
 4. [Split a string into words and count their occurrences.](#split_strings)
 5. Do the exercises on pages 76 and 77 of the book
-   - [ Exercise 1: Write a program which repeatedly reads integers until the user enters “done”. Once “done” is entered, print out the total, count, and average of the integers. If the user enters anything other than a integers, detect their mistake using try and except and print an error message and skip to the next integers.](#repeatedly)
-   - [Exercise 2: Write another program that prompts for a list of numbers as above and at the end prints out both the maximum and minimum of the numbers instead of the average.](#list_num)
+   - [Slicing strings](#Slicing)
+   - [String methods](#methods)
 
 ## 1. Write a program to count the occurrences of a character in a string. <a name="count_character"></a>
 
@@ -86,66 +88,94 @@ def words_count(string):
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/Screenshots/image-3.png)
 
-## 5. Write a program which repeatedly reads integers until the user enters “done”. <a name="repeatedly"></a>
+## 5. Slicing strings <a name="Slicing"></a>
 
-Write a program which repeatedly reads integers until the user enters “done”. Once “done” is entered, print out the total, count, and average of the integers. If the user enters anything other than a integers, detect their mistake using try and except and print an error message and skip to the next integers.
+Take the following Python code that stores a string:
+
+```python
+   str = X-DSPAM-Confidence: 0.8475
+```
+
+Use `find` and string `slicing` to extract the portion of the string after the colon character and then use the float function to convert the extracted string into a floating point number.
 
 **Code Snippet**:
 
 ```python
-count = 0
-total = 0
-print("Enter integers one by one (type 'done' to finish.)")
-while True:
-    num = input()
-    if num.lower()=="done":
-        average = total/count
-        print(f"Total: {total}, Count: {count}, Average: {average}")
-        break
-    try:
-        total+=int(num)
-        count+=1
-    except:
-        print("Something went wrong, please enter an integer!")
+def  extract_float(s):
+    index = s.find(':')+1
+    return float(s[index:].strip())
+
+s = 'X-DSPAM-Confidence: 0.8475'
+f = extract_float(s)
+print(f)
 ```
 
 **Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/Exercise5.py)
 
 **Screenshot from the output**:
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/Screenshots/image-4.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/Screenshots/image-6.png)
 
-## 6. prompts for a list of numbers as above and at the end prints out both the maximum and minimum of the numbers <a name="list_num"></a>
+## 6. String methods <a name="methods"></a>
 
-Write another program that prompts for a list of numbers as above and at the end prints out both the maximum and minimum of the numbers instead of the average.
+Read the documentation of the string methods at [https://docs.python.org/library/stdtypes.html#string-methods](https://docs.python.org/library/stdtypes.html#string-methods).
+You might want to experiment with some of them to make sure you understand how they work. strip and replace are particularly useful.
+The documentation uses a syntax that might be confusing. For example, in find(sub[, start[, end]]), the brackets indicate optional arguments. So sub is required, but start is optional, and if you include start, then end is optional.
 
-**Code Snippet**:
+### **1. Using `strip()` to Clean Up Whitespace**
 
 ```python
-max_num = None
-min_num = None
+# Removing leading and trailing spaces
+dirty_string = "   Hello, World!   "
+clean_string = dirty_string.strip()
+print(f"Before strip: '{dirty_string}' | After strip: '{clean_string}'")
+```
 
-while True:
-    num = input("Enter number: ")
+### **2. Using `replace()` to Replace Substrings**
 
-    if num.lower() == "done":
-        if max_num is not None and min_num is not None:
-            print(f"Maximum: {max_num} And Minimum: {min_num}")
-        else:
-            print(f"No valid numbers were entered.")
-        break
+```python
+# Replacing a substring
+text = "I love Python programming"
+new_text = text.replace("Python", "AI")
+print(f"Before replace: '{text}' | After replace: '{new_text}'")
+```
 
-    try:
-        num = int(num)
-        if max_num is None or num > max_num:
-            max_num = num
-        if min_num is None or num < min_num:
-            min_num = num
+### **3. Using `find()` to Locate a Substring**
 
-    except:
-        print("Invalid data. Please enter a valid number.")
+```python
+# Finding the position of a substring
+sentence = "The quick brown fox jumps over the lazy dog."
+position = sentence.find("fox")
+print(f"The word 'fox' is found at index: {position}")
+```
+
+### **4. `strip()` & `replace()`**
+
+```python
+# Cleaning and replacing in one go
+dirty_text = "   The sky is blue   "
+clean_replaced_text = dirty_text.strip().replace("blue", "clear")
+print(f"Result: '{clean_replaced_text}'")
+```
+
+### \*\*\*\*
+
+```python
+
+```
+
+### \*\*\*\*
+
+```python
+
+```
+
+### \*\*\*\*
+
+```python
+
 ```
 
 **Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/Exercise6.py)
 
 **Screenshot from the output**:
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/Screenshots/image-5.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/Screenshots/image-7.png)
