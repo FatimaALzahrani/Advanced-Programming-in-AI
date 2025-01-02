@@ -28,10 +28,10 @@ def compute_pay(hours, rate):
         return hours * rate
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7. Chapter Exercises/Exercise1.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Exercise1.py)
 
 **Screenshot from the output**:
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7. Chapter Exercises/Screenshots/image-4.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Screenshots/image-4.png)
 
 ### 2. Overtime Pay Calculation with Error Handling <a name="pay-calculation-with-error-handling"></a>
 
@@ -49,11 +49,11 @@ except ValueError:
     print("Error, please enter numeric input")
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7. Chapter Exercises/Exercise2.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Exercise2.py)
 
 **Screenshot from the output**:
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7. Chapter Exercises/Screenshots/image-5.png)
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7. Chapter Exercises/Screenshots/image-6.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Screenshots/image-5.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Screenshots/image-6.png)
 
 ### 3. Grade Calculation Based on Score <a name="grade_calculation"></a>
 
@@ -85,7 +85,7 @@ except ValueError:
     print("Bad Score")
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7. Chapter Exercises/Exercise3.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Exercise3.py)
 
 **Screenshot from the output**:
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7. Chapter Exercises/Screenshots/https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7. Chapter Exercises/Screenshots/image-7.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Screenshots/image-7.png)

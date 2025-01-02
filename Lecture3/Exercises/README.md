@@ -160,10 +160,10 @@ rate = input(f"Enter Rate: ")
 print(computepay(hours, rate))
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Exercises/Lecture3/Exercise6.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture3/Exercises/Exercise6.py)
 
 **Screenshot from the output**:
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Exercises/Lecture3/Screenshots/image-pay.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture3/Exercises/Screenshots/image-pay.png)
 
 ## Grade Computation <a name="exercise-7-grade-computation"></a>
 
@@ -200,7 +200,7 @@ while True:
     print(computegrade(user_input))
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Exercises/Lecture3/Exercise7.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture3/Exercises/Exercise7.py)
 
 **Screenshot from the output**:
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Exercises/Lecture3/Screenshots/image-grade.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture3/Exercises/Screenshots/image-grade.png)
