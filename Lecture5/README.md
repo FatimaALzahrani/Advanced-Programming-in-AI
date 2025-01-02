@@ -157,24 +157,6 @@ clean_replaced_text = dirty_text.strip().replace("blue", "clear")
 print(f"Result: '{clean_replaced_text}'")
 ```
 
-### \*\*\*\*
-
-```python
-
-```
-
-### \*\*\*\*
-
-```python
-
-```
-
-### \*\*\*\*
-
-```python
-
-```
-
 **Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/Exercise6.py)
 
 **Screenshot from the output**:

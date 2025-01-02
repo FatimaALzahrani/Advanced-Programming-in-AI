@@ -1,4 +1,4 @@
-# Do the exercises on pages 76 and 77 of the book (Charles R. Severance .et al, Python for Everybody: Exploring Data in Python 3, CreateSpace Independent Publishing Platform, 2024).
+# Do the exercises on pages 64 and 65 of the book (Charles R. Severance .et al, Python for Everybody: Exploring Data in Python 3, CreateSpace Independent Publishing Platform, 2024).
 
 # Exercise 1: Write a program which repeatedly reads integers until the user enters “done”. Once “done” is entered, print out the total, count, and average of the integers.
 #  If the user enters anything other than a integers, detect their mistake using try and except and print an error message and skip to the next integers.
