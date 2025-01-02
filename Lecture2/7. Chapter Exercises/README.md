@@ -88,4 +88,4 @@ except ValueError:
 **Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Exercise3.py)
 
 **Screenshot from the output**:
-![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Screenshots/https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Screenshots/image-7.png)
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture2/7.%20Chapter%20Exercises/Screenshots/image-7.png)
