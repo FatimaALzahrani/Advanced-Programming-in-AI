@@ -18,10 +18,23 @@ To reach the practical application during the lecture [Click here](https://githu
 
 **Code Snippet**:
 
+#### Using Build-in function count
+
 ```python
 def count_character_occurrences(string, char):
     count = string.count(char)
     return count
+```
+
+#### Using For loop
+
+```python
+def count_characters(s,c):
+    total = 0
+    for ch in s:
+        if(ch==c):
+            total+=1
+    return total
 ```
 
 **Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture5/Exercise1.py)
