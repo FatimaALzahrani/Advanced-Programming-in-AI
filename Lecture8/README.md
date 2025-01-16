@@ -6,11 +6,139 @@ To reach the practical application during the lecture [Click here](https://githu
 
 ## Table of Contents
 
-1. [Exercise 1](#ex1)
-2. [Exercise 2](#ex2)
-3. [Exercise 3](#ex3)
-4. [Exercise 4](#ex4)
-5. [Exercise 5](#ex5)
+1.  [Create a dictionary representing a student's data (name, age, subjects).](#ex1_1)
+2.  [Write a program to count the frequency of words in a string using a dictionary.](#ex1_2)
+3.  [Merge two dictionaries into one.](#ex1_3)
+4.  [Access and print data from a nested dictionary.](#ex1_4)
+5.  [Book Exercises](#book)
+    - [Exercise 1](#ex1)
+    - [Exercise 2](#ex2)
+    - [Exercise 3](#ex3)
+    - [Exercise 4](#ex4)
+    - [Exercise 5](#ex5)
+
+### 1. Create a dictionary representing a student's data (name, age, subjects). <a name="ex1_1"></a>
+
+**Code Snippet**:
+
+```python
+students = {'1':{'name':'Fatimah Alzahrani','age':22,'subjects':['Advanced Programming in AI','Advanced Statistics and Probability']},
+            '2':{'name':'Ahmed Alzahrani','age':9,'subjects':['Math','Sciences','Artistic']},
+            '3':{'name':'Majd Alzahrani','age':22,'subjects':['Data visualization','Object Oriented Programming','Robots']}}
+```
+
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise1.py)
+
+**Screenshot from the output**:
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-ex1.png)
+
+<hr/>
+
+### 2. Write a program to count the frequency of words in a string using a dictionary. <a name="ex1_2"></a>
+
+**Code Snippet**:
+
+```python
+def count_words(text):
+    dictionary={}
+    words=text.split(' ')
+    for word in words:
+        if word in dictionary:
+            dictionary[word]+=1
+        else:
+            dictionary[word]=1
+    return dictionary
+```
+
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise2.py)
+
+**Screenshot from the output**:
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-ex2.png)
+
+<hr/>
+
+### 3. Merge two dictionaries into one. <a name="ex1_3"></a>
+
+**Code Snippet**:
+
+```python
+personal_info = {
+    "employee_id": 1,
+    "full_name": "Fatimah Alzahrani",
+    "age": 22,
+    "email": "12fatimah.15@gmail.com"
+}
+
+work_info = {
+    "position": "Software Engineer",
+    "department": "Technology",
+    "salary": 85000,
+    "hire_date": "2025-01-16"
+}
+
+employee_profile = {**personal_info, **work_info}
+```
+
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise3.py)
+
+**Screenshot from the output**:
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-ex3.png)
+
+<hr/>
+
+### 4. Access and print data from a nested dictionary. <a name="ex1_4"></a>
+
+**Code Snippet**:
+
+```python
+employee_data = {
+    "employee_1": {
+        "name": "Fatimah Mohammed",
+        "age": 22,
+        "contact_info": {
+            "email": "12fatimah.15@gmail.com",
+            "phone": "1234567890"
+        },
+        "work_info": {
+            "position": "Software Engineer",
+            "department": "Technology",
+            "salary": 85000
+        }
+    },
+    "employee_2": {
+        "name": "Mohammed Abduallah",
+        "age": 50,
+        "contact_info": {
+            "email": "Mohammed@gmail.com",
+            "phone": "1234567890"
+        },
+        "work_info": {
+            "position": "Project Manager",
+            "department": "Operations",
+            "salary": 95000
+        }
+    }
+}
+
+for employee_key, employee in employee_data.items():
+    print("=" * 50)
+    print(f"{employee_key.replace('_', ' ').title()}:")
+    print(f"Name: {employee['name']}")
+    print(f"Email: {employee['contact_info']['email']}")
+    print(f"Position: {employee['work_info']['position']}")
+    print(f"Department: {employee['work_info']['department']}")
+    print(f"Salary: ${employee['work_info']['salary']:,}")
+    print("=" * 50)
+```
+
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise4.py)
+
+**Screenshot from the output**:
+![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-ex4.png)
+
+<hr/>
+
+## Book Exercises <a name="book"></a>
 
 ### Exercise 1: Download a copy of the file <a name="ex1"></a>
 
@@ -32,7 +160,7 @@ def check_string(dictionary,word):
     return word in dictionary
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise1.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise1.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image.png)
@@ -65,7 +193,7 @@ def days(file):
         return dictionary
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise2.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise2.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-1.png)
@@ -94,7 +222,7 @@ def emails(file):
         return dictionary
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise3.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise3.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-2.png)
@@ -131,7 +259,7 @@ def maximum(emails):
     return largest,em
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise4.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise4.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-3.png)
@@ -159,7 +287,7 @@ def domains(file):
         return dictionary
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise5.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise5.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-4.png)

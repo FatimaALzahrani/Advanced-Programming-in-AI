@@ -1,29 +1,25 @@
-# Exercise 3: Write a program to read through a mail log, build a histogram using a dictionary to count how many messages have come from each email address, and print the dictionary.
-"""
-Enter file name: mbox-short.txt
-{gopal.ramasammycook@gmail.com: 1, louis@media.berkeley.edu: 3,
-cwen@iupui.edu: 5, antranig@caret.cam.ac.uk: 1,
-rjlowe@iupui.edu : 2, gsilver@umich.edu: 3,
-david.horwitz@uct.ac.za: 4, wagnermr@iupui.edu: 1,
-zqian@umich.edu: 4, stephen.marquard@uct.ac.za: 2,
-ray@media.berkeley.edu: 1}
-"""
+# Merge two dictionaries into one.
 
 from colorama import Fore,init
 
 init(autoreset=True)
 
-def emails(file):
-    dictionary={}
-    with open('Lecture8/'+file,'r') as file:
-        lines = file.readlines()
-        for line in lines:
-            if line.startswith('From '):
-                email = line.split()
-                dictionary[email[1]] = 1 if email[1] not in dictionary else dictionary[email[1]]+1
-        return dictionary
+personal_info = {
+    "employee_id": 1,
+    "full_name": "Fatimah Alzahrani",
+    "age": 22,
+    "email": "12fatimah.15@gmail.com"
+}
 
-if __name__ == '__main__':
-    file_name = input(f"{Fore.BLUE}Enter File name : {Fore.YELLOW}")
-    dictionary = emails(file_name)
-    print(f"{Fore.GREEN}{dictionary}")
+work_info = {
+    "position": "Software Engineer",
+    "department": "Technology",
+    "salary": 85000,
+    "hire_date": "2025-01-16"
+}
+
+employee_profile = {**personal_info, **work_info}
+print(Fore.CYAN+"=" * 30)
+for key, value in employee_profile.items():
+    print(f"{Fore.GREEN}{key.replace('_', ' ').title()}: {Fore.MAGENTA}{value}")
+print(Fore.CYAN+"=" * 30)
