@@ -76,8 +76,23 @@ work_info = {
     "hire_date": "2025-01-16"
 }
 
-employee_profile = {**personal_info, **work_info}
+# 1. Using update() method
+d1 = personal_info
+d1.update(work_info)
+
+# 2. Using | operator
+d2 = personal_info | work_info
+
+# 3. Using Dictionary Unpacking (**)
+d3 = {**personal_info, **work_info}
+
+# 4. Using a loop
+d4 = personal_info
+for key, value in work_info.items():
+    d4[key] = value
 ```
+
+**Reference**: [Geeksforgeeks](https://www.geeksforgeeks.org/python-merging-two-dictionaries/)
 
 **Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Exercise3.py)
 
@@ -138,7 +153,7 @@ for employee_key, employee in employee_data.items():
 
 <hr/>
 
-## Book%20Exercises <a name="book"></a>
+## Book Exercises <a name="book"></a>
 
 ### Exercise 1: Download a copy of the file <a name="ex1"></a>
 
