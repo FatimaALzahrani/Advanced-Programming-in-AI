@@ -138,7 +138,7 @@ for employee_key, employee in employee_data.items():
 
 <hr/>
 
-## Book Exercises <a name="book"></a>
+## Book%20Exercises <a name="book"></a>
 
 ### Exercise 1: Download a copy of the file <a name="ex1"></a>
 
@@ -160,7 +160,7 @@ def check_string(dictionary,word):
     return word in dictionary
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise1.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book%20Exercises/Exercise1.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image.png)
@@ -193,7 +193,7 @@ def days(file):
         return dictionary
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise2.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book%20Exercises/Exercise2.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-1.png)
@@ -222,7 +222,7 @@ def emails(file):
         return dictionary
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise3.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book%20Exercises/Exercise3.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-2.png)
@@ -259,7 +259,7 @@ def maximum(emails):
     return largest,em
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise4.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book%20Exercises/Exercise4.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-3.png)
@@ -287,7 +287,7 @@ def domains(file):
         return dictionary
 ```
 
-**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book Exercises/Exercise5.py)
+**Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Book%20Exercises/Exercise5.py)
 
 **Screenshot from the output**:
 ![alt text](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture8/Screenshots/image-4.png)
