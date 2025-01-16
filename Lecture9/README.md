@@ -113,7 +113,7 @@ print(f"After swapping: a = {a}, b = {b}")
 
 **Output**:
 
-````
+```
 Before swapping: a = 5, b = 10
 After swapping: a = 10, b = 5
 ```
@@ -156,7 +156,7 @@ def list_tuple(dictionary):
         list_emails.append((d,dictionary[d]))
     list_emails.sort(reverse=True, key=lambda x: x[1])
     return list_emails
-````
+```
 
 **Solution**: [See Full Code](https://github.com/FatimaALzahrani/Advanced-Programming-in-AI/blob/main/Lecture9/Book%20Exercises/Exercise1.py)
 
